@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -35,4 +35,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.header {
+  font-size: 150%;
+}
+
+.github-profile {
+  margin: 1rem;
+  border-radius: 20px;
+  border-color: pink;
+  background-color: lightgrey;
+  color:white;
+  display: flex;
+}
+.info {
+  display: inline-block;
+  margin-left: 12px;
+  vertical-align: top;
+}
+.img {
+  width: 75px;
+  border-radius: 10px;
+  height: fit-content;
+}
+.icon {
+  height:75px;
+  width: 75px;
+  border-radius: 10px;
+}
+a {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+.name {
+  margin-top: 1rem;
+  font-size: 125%;
+  font-weight: bold;
+}
+.detail {
+  font-size: 100%;
+  margin-top: 1rem;
+}
+form {
+  padding: 20px;
+  border: 3px;
+
+}
+.margin-right{
+  margin-right:1rem;
+}
+
+input, select {
+  color:lightgray !important;
 }
