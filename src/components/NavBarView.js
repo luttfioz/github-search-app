@@ -5,7 +5,7 @@ import logo from './../logo.svg';
 
 const NavBarView = () => {
     return (
-        <Navbar bg="light" variant="dark" sticky="top">
+        <Navbar className="nav" bg="light" variant="dark" sticky="top">
             <Navbar.Brand href="/app">
                 <img
                     src={logo}

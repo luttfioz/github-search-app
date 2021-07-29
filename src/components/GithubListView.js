@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Grid from "@material-ui/core/Grid";
 import * as Icon from 'react-bootstrap-icons';
+import Spinner from 'react-bootstrap/Spinner'
+import Button from 'react-bootstrap/Button'
 
 class GithubListView extends Component {
     constructor(props) {
@@ -13,9 +15,28 @@ class GithubListView extends Component {
 
         if (fetching) {
             return (
-                <div>
-                    YUKLENIYOR.....
-                </div>
+                <>
+                    <Button variant="primary" disabled>
+                        <Spinner
+                            as="span"
+                            animation="border"
+                            size="sm"
+                            role="status"
+                            aria-hidden="true"
+                        />
+                        <span className="visually-hidden">Loading...</span>
+                    </Button>{' '}
+                    <Button variant="primary" disabled>
+                        <Spinner
+                            as="span"
+                            animation="grow"
+                            size="sm"
+                            role="status"
+                            aria-hidden="true"
+                        />
+                        Loading...
+                    </Button>
+                </>
             )
         } else {
             let content = null;

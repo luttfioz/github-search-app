@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
+import debounce from 'lodash.debounce';
 
 class GithubFormView extends Component {
 
@@ -12,10 +13,22 @@ class GithubFormView extends Component {
         }
     }
 
-    componentDidUpdate(prevProps, prevState) {
+    setAction() {
         const { searchType, searchArea } = this.state;
         this.props.getGitData(searchType, searchArea);
         this.props.getSearchType(searchType);
+    }
+
+    setActionDebounce = debounce(() => {
+        this.setAction();
+    }, 2000);
+
+    componentDidMount() {
+        this.setAction();
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        this.setActionDebounce();
     }
 
     handleChange = (e) => {

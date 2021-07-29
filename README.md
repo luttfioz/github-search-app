@@ -43,3 +43,7 @@ Bonuses
 - [ ] Any choice of styling (UI kits, old school CSS, CSS in JS, etc.)
 - [ ] Deploying publicly your code to somewhere (Netlify, Github pages, Heroku) and sharing link with us
 - [ ] Immutable data usage over mutable types
+
+Extras:
+
+used 'lodash.debounce'
