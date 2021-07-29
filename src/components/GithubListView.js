@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import * as Icon from 'react-bootstrap-icons';
 import Spinner from 'react-bootstrap/Spinner'
 import Button from 'react-bootstrap/Button'
+import { UserCard } from './UserCardView'
 
 class GithubListView extends Component {
     constructor(props) {
@@ -72,17 +73,7 @@ class GithubListView extends Component {
 export default GithubListView;
 
 
-export const UserCard = (props) => {
-    const profile = props;
 
-    return <div className="github-profile">
-        <img className="img" src={profile.avatar_url} alt="http://placehold.it/75" />
-        <div className="info">
-            <div className="name">{profile.login}</div>
-            <div className="detail">{profile.type}</div>
-        </div>
-    </div>;
-}
 
 export const IssueCard = (props) => {
     const item = props;
