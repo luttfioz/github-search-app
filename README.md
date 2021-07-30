@@ -1,6 +1,9 @@
 # Getting Started with Github Search App
 
 ## The Project
+[![Netlify Status](https://api.netlify.com/api/v1/badges/465be345-e8fd-4ae9-b7bb-49722ca85ca2/deploy-status)](https://app.netlify.com/sites/github-search-app-v0/deploys)
+
+You can reach the application at https://github-search-app-v0.netlify.app/   
 
 This simple single page application built with
 
@@ -47,11 +50,13 @@ Bonuses
 Extras:
 
 -    used 'lodash.debounce'
--    ES6
-    - import/export
-    - Class
-    - Destruct at App.js line 44
-    - ulet and const at App.js line 44
-    - Arrow functions at App.js line 20
-    - Default Parameter Values at reducers/GitData.js line 10
-    - Object Rest  at reducers/GitData.js line 13 16 23
+-    ES6  
+    - import/export  
+    - Class  
+    - Destruct at App.js line 44  
+    - ulet and const at App.js line 44  
+    - Arrow functions at App.js line 20  
+    - Default Parameter Values at reducers/GitData.js line 10  
+    - Object Rest  at reducers/GitData.js line 13 16 23  
+    -   
+    
