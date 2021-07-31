@@ -49,11 +49,6 @@ class GithubListView extends Component {
                             {gitData.items.map((item, i) => <Grid key={i} item xs={6} sm={4}> <UserCard key={i} {...item} /> </Grid>)}
                         </Grid>)
                         break;
-                    case 'issues':
-                        content = (<div>
-                            {gitData.items.map((item, i) => <IssueCard key={i} {...item} />)}
-                        </div>)
-                        break;
                     case 'repositories':
                         content = (<Grid container spacing={3}>
                             {gitData.items.map((item, i) => <Grid key={i} item xs={12} sm={6}> <RepositoryCard key={i} {...item} /> </Grid>)}
@@ -73,17 +68,6 @@ class GithubListView extends Component {
 export default GithubListView;
 
 
-
-
-export const IssueCard = (props) => {
-    const item = props;
-
-    return <div className="github-profile">
-        <div className="info">
-            <div className="name">{item.title}</div>
-        </div>
-    </div>;
-}
 
 export const RepositoryCard = (props) => {
     const item = props;
