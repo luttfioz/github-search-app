@@ -1,15 +1,14 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
-import logo from './logo.svg';
 import './App.scss';
-
-import GithubSearchAppView from './components/GithubSearchAppView'
-import AboutView from './components/AboutView'
+// import GithubSearchAppView from './components/GithubSearchAppView'
+// import AboutView from './components/AboutView'
 import { routes } from './routes'
 import NavBarView from './components/NavBarView';
+
+const GithubSearchAppView = lazy(() => import('./components/GithubSearchAppView'));
+const AboutView = lazy(() => import('./components/AboutView'));
 
 class App extends React.Component {
 
@@ -46,21 +45,23 @@ class App extends React.Component {
     return (
       <Router>
         {/* {this.renderNavMenu()} */}
-        <NavBarView />
-        <Switch>
-          <Route exact path={login.path}>
-            <GithubSearchAppView />
-          </Route>
-          <Route exact path={app.path}>
-            <GithubSearchAppView />
-          </Route>
-          <Route exact path={about.path}>
-            <AboutView />
-          </Route>
-          <Route exact path={maps.path}>
-            <GithubSearchAppView />
-          </Route>
-        </Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+          <NavBarView />
+          <Switch>
+            <Route exact path={login.path}>
+              <GithubSearchAppView />
+            </Route>
+            <Route exact path={app.path}>
+              <GithubSearchAppView />
+            </Route>
+            <Route exact path={about.path}>
+              <AboutView />
+            </Route>
+            <Route exact path={maps.path}>
+              <GithubSearchAppView />
+            </Route>
+          </Switch>
+        </Suspense>
       </Router>
     );
   }
