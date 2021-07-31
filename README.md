@@ -27,11 +27,11 @@ On smaller screens (width <= 768px), the grid will be 2 columns.
 ## Tasks
 
 - [x] Frontend library should be React.js  
-- [x] Global state management (the choice is up to the interviewee) -Redux
+- [x] Global state management -Redux
 - [x] Routing (user should see relevant page's route in browser's address bar)
-- [ ] Login page (can be dummy, no need to authentication)
+- [x] Login page (can be dummy, no need to authentication)
 - [x] Navigation bar
-- [ ] A form page (whether using form library or not up to interviewee) with simple validations (submitting wrong input should inform the user)
+- [x] A form page with simple validations (submitting wrong input should inform the user)
 - [x] For dummy routes/pages, content can be filled with lorem ipsum (https://lipsum.com/)
 - [x] AJAX requests (backend or API is not necessary, even simulating data gathering with mocks is fine)
 - [x] Share project on any Public Source Control Provider (Gitlab, Github, Bitbucket)
@@ -53,9 +53,9 @@ Extras:
 -    ES6  
     - import/export  
     - Class  
-    - Destruct at App.js line 44  
-    - ulet and const at App.js line 44  
-    - Arrow functions at App.js line 20  
+    - Destruct at App.js line 52  
+    - let and const at App.js line 52  
+    - Arrow functions at App.js line 14  
     - Default Parameter Values at reducers/GitData.js line 10  
     - Object Rest  at reducers/GitData.js line 13 16 23  
     -   

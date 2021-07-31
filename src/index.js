@@ -11,6 +11,8 @@ import rootReducer from './store/reducers'
 import thunk from 'redux-thunk';
 import promise from 'redux-promise-middleware';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 let middleware = applyMiddleware(promise, thunk);
 const store = createStore(rootReducer, middleware)
 

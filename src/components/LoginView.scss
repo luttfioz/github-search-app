@@ -1,0 +1,66 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav {
+    height: 100%;
+    background-image: url(https://github.blog/wp-content/uploads/2020/12/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.png?w=1200);
+    background-image: url(https://www.cnet.com/a/img/kgQ52MdvgYXQ4l1R3lGBGPfDSsE=/1092x0/2019/07/29/6109b01f-e32f-457d-9533-cd55b68ba5ba/d6j9ongwaam4yrm.png);
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 60%; 
+    }
+
+    .sidenav{
+        width: 60%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 40%;
+    }
+}
+
+.login-main-text{
+    margin-top: 10%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    margin-top: 10%;
+}
+.has-error{
+    border-color:red !important;
+}
+.has-error-message{
+    color:red !important;
+    font-size: 80%;
+}

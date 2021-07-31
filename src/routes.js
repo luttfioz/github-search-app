@@ -1,6 +1,6 @@
 export const routes = {
     login: {
-        path: "/",
+        path: "/login",
         title: "Login"
     },
     app: {
