@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.scss';
 import GithubSearchAppView from './components/GithubSearchAppView'
 import AboutView from './components/AboutView'
+import MapsView from './components/MapsView'
 import NavBarView from './components/NavBarView';
 import LoginView from './components/LoginView';
 import { routes } from './routes'
@@ -83,7 +84,7 @@ function App() {
           <AboutView />
         </Route>
         <Route exact path={maps.path}>
-          <GithubSearchAppView />
+          <MapsView />
         </Route>
       </Switch>
       {/* </Suspense> */}

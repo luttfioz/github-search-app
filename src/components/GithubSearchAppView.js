@@ -11,11 +11,11 @@ function GithubSearchAppView() {
     return (
         <Container maxWidth="md">
             <div>
-                <div>
+                <div className="app-wrapper">
                     <img src={logo} className="App-logo" alt="logo" />
                     <div className="info">
                         <Box className="header">Github Searcher </Box>
-                        <Box>Search users, repositories or issues below</Box></div>
+                        <Box>Search users or repositories below</Box></div>
                 </div>
                 <GithubFormViewContainer />
                 <GithubListViewContainer />

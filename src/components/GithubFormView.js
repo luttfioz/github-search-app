@@ -50,7 +50,6 @@ class GithubFormView extends Component {
                 <Select variant="outlined" name="searchType" value={searchType} onChange={this.handleChange}>
                     <option value="users">User</option>
                     <option value="repositories">Repository</option>
-                    <option value="issues">Issue</option>
                 </Select>
             </div>
         )
