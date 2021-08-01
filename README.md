@@ -57,13 +57,13 @@ Extras:
 -    custom hook
 -    unit tests with @testing-library and coverage over 70%
 -    ES6  
-    - import/export  
-    - Class  
-    - Destruct at App.js line 52  
-    - let and const at App.js line 52  
-    - Arrow functions at App.js line 14  
+    - import/export at almost all components
+    - Class at almost all components
+    - Destruct at App.js line 54  
+    - let and const at App.js line 54  
+    - Arrow functions at App.js line 16  
     - Default Parameter Values at reducers/GitData.js line 10  
-    - Object Rest  at reducers/GitData.js line 13 16 23  
+    - Object Rest operator at reducers/GitData.js line 13 16 23  
     -   
 -    Google maps integration with embedded iframe
 -    localStorage
