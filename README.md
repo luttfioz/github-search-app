@@ -55,7 +55,7 @@ Extras:
 
 -    used 'lodash.debounce'
 -    custom hook
--    unit tests with @testing-library
+-    unit tests with @testing-library and coverage over 70%
 -    ES6  
     - import/export  
     - Class  
@@ -66,3 +66,5 @@ Extras:
     - Object Rest  at reducers/GitData.js line 13 16 23  
     -   
 -    Google maps integration with embedded iframe
+-    localStorage
+-    lazy loading for LoginView component

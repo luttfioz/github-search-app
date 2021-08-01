@@ -70,6 +70,7 @@ export default class LoginView extends React.Component {
                                     <input type="email" required className={`form-control ${this.errorClass(this.state.formErrors.email)}`}
                                         name="email"
                                         placeholder="Email"
+                                        data-testid="email"
                                         value={this.state.email}
                                         onChange={(event) => this.handleUserInput(event)} />
                                     {(this.state.formErrors.email.length === 0) ? '' : <span className="has-error-message"> Email {this.state.formErrors['email']}</span>}
@@ -79,12 +80,13 @@ export default class LoginView extends React.Component {
                                     <input type="password" required className={`form-control ${this.errorClass(this.state.formErrors.password)}`}
                                         name="password"
                                         placeholder="Password"
+                                        data-testid="password"
                                         value={this.state.password}
                                         onChange={(event) => this.handleUserInput(event)} />
                                     {(this.state.formErrors.password.length === 0) ? '' : <span className="has-error-message">Password {this.state.formErrors['password']}</span>}
 
                                 </div>
-                                <button type="submit" className="btn btn-primary btn-black" >Login</button>
+                                <button type="submit" data-testid="login" className="btn btn-primary btn-black" >Login</button>
                             </form>
                         </div>
                     </div>

@@ -6,9 +6,10 @@ import GithubSearchAppView from './components/GithubSearchAppView'
 import AboutView from './components/AboutView'
 import MapsView from './components/MapsView'
 import NavBarView from './components/NavBarView';
-import LoginView from './components/LoginView';
 import { routes } from './routes'
 
+// import LoginView from './components/LoginView';
+const LoginView = lazy(() => import('./components/LoginView'));
 // const GithubSearchAppView = lazy(() => import('./components/GithubSearchAppView'));
 // const AboutView = lazy(() => import('./components/AboutView'));
 

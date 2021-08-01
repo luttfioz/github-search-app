@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders commponent', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Github Search App Login Page/i);
+  const linkElement = screen.getByText(/Loading/i);
   expect(linkElement).toBeInTheDocument();
 });
