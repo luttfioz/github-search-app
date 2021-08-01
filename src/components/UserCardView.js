@@ -7,7 +7,7 @@ export const UserCard = (props) => {
     return <div className="github-profile">
         <img className="img" src={profile.avatar_url} alt="http://placehold.it/75" />
         <div className="info">
-            <div className="name">{profile.login}</div>
+            <div className="name" data-testid='name'>{profile.login}</div>
             <div className="detail">Favorite Quote: {JSON.stringify(data)}</div>
         </div>
     </div>;

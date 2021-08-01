@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Grid from "@material-ui/core/Grid";
-import * as Icon from 'react-bootstrap-icons';
 import Spinner from 'react-bootstrap/Spinner'
 import Button from 'react-bootstrap/Button'
 import { UserCard } from './UserCardView'
+import { RepositoryCard } from './RepositoryCardView'
 
 class GithubListView extends Component {
     constructor(props) {
@@ -68,21 +68,3 @@ class GithubListView extends Component {
 export default GithubListView;
 
 
-
-export const RepositoryCard = (props) => {
-    const item = props;
-
-    return <div className="github-profile">
-        <Icon.BookmarkStar className="icon" />
-        <div className="info">
-            <a href={item.html_url}>{item.name}</a>
-            <div className="name">{item.description}</div>
-            <div className="detail">
-                <strong> {item.stargazers_count}</strong>  Stars ·
-                <strong> {item.forks_count}</strong>  Forks ·
-                <strong> {item.open_issues_count}</strong>  Issues
-            </div>
-
-        </div>
-    </div>;
-}
