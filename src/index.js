@@ -5,16 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux'
-import { applyMiddleware, createStore } from 'redux'
-import rootReducer from './store/reducers'
-
-import thunk from 'redux-thunk';
-import promise from 'redux-promise-middleware';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-let middleware = applyMiddleware(promise, thunk);
-const store = createStore(rootReducer, middleware)
+import { store } from './store'
 
 ReactDOM.render(
   <Provider store={store}>
@@ -27,3 +21,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
