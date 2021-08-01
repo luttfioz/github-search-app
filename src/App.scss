@@ -1,5 +1,5 @@
 @import "bootstrap/scss/bootstrap";
-
+@import './theme/colors';
 
 .App {
   text-align: center;
@@ -17,18 +17,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $primary-dark;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: $light-blue;
 }
 
 @keyframes App-logo-spin {
@@ -53,10 +53,12 @@
 .github-profile {
   margin: 1rem;
   border-radius: 20px;
-  border-color: pink;
-  background-color: lightgrey;
-  color:white;
+  border-color: $pink;
+  background-color: $light-gray;
+  opacity: 0.9;
+  color:$white;
   display: flex;
+  min-height: 200px;
 }
 .info {
   display: inline-block;
@@ -83,6 +85,11 @@ a {
   font-size: 125%;
   font-weight: bold;
 }
+.link {
+  margin-top: 2rem;
+  font-size: 125%;
+  font-weight: bold;
+}
 .detail {
   font-size: 100%;
   margin-top: 1rem;
@@ -97,7 +104,7 @@ form {
 }
 
 input, select {
-  color:lightgray !important;
+  color:$light-gray !important;
 }
 
 .app-wrapper {

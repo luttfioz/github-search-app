@@ -8,7 +8,7 @@ import { Provider } from 'react-redux'
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-import { store } from './store'
+import { store } from './store/store'
 
 ReactDOM.render(
   <Provider store={store}>

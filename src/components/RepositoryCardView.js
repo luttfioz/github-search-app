@@ -6,7 +6,7 @@ export const RepositoryCard = (props) => {
     return <div className="github-profile">
         <Icon.BookmarkStar className="icon" />
         <div className="info">
-            <a href={item.html_url}>{item.name}</a>
+            <a className="link" href={item.html_url} target="_blank">{item.name}</a>
             <div className="name" data-testid='description'>{item.description}</div>
             <div className="detail">
                 <strong> {item.stargazers_count}</strong>  Stars ·

@@ -3,23 +3,27 @@
 ## The Project
 [![Netlify Status](https://api.netlify.com/api/v1/badges/465be345-e8fd-4ae9-b7bb-49722ca85ca2/deploy-status)](https://app.netlify.com/sites/github-search-app-v0/deploys)
 
-You can reach the application at https://github-search-app-v0.netlify.app/   
+You can reach the application at https://github-search-app-v0.netlify.app/  , to access the application you can enter any valid email and min 6 character any password.
 
 This simple single page application built with
 
 * React.js
 * Redux 
-* [React Router](https://github.com/ReactTraining/react-router)
+* React Router
 * Scss
+* material-ui and bootstrap
 
 That allows the users to search the **users** or **repositories** on GitHub. The results will be fetched from the GitHub API.
 
 * [GitHub Search API Docs](https://developer.github.com/v3/search/)
+* [Random Quote API](https://api.quotable.io/random)
 
 
-For each repository display the repository user details returned from API and the repository name, author, stars and other statistics below it. 
-For the users, show the profile picture, name, location, any other data you have and link to their profile.
 
+For each repository display the repository user details returned from API and the repository name, about, stars and other statistics below it. And navigate to repo at github.com.
+For the users, show the profile picture, name and a random quote data their profile.
+
+For users;
 On large screens (width > 768px), the grid will be 3 columns.
 On smaller screens (width <= 768px), the grid will be 2 columns.
 
@@ -50,6 +54,8 @@ Bonuses
 Extras:
 
 -    used 'lodash.debounce'
+-    custom hook
+-    unit tests with @testing-library
 -    ES6  
     - import/export  
     - Class  
@@ -59,4 +65,4 @@ Extras:
     - Default Parameter Values at reducers/GitData.js line 10  
     - Object Rest  at reducers/GitData.js line 13 16 23  
     -   
-    
+-    Google maps integration with embedded iframe
